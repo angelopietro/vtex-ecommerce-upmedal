@@ -1,0 +1,14 @@
+{
+  "store.home": { 
+    "parent": { 
+      "header": "header", 
+      "footer": "footer"
+    },
+    "blocks": [
+      "tab-layout#home",
+      "slider-layout#home",
+      "list-context.product-list#home"
+    ]
+  }
+  
+}

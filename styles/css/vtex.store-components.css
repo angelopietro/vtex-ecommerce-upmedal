@@ -1,0 +1,50 @@
+:global(.vtex-sticky-layout-0-x-wrapper--sticky-header) {
+  background-color: #212121;
+}    
+
+.logoContainer{
+  display:flex;
+  align-items:center;
+}
+
+.logoImage{
+  max-width: 133px;
+}
+
+.searchBarContainer :global(.vtex-input-prefix__group){
+  border: 0;
+  border-radius: 0;
+  border-bottom: 1px solid #FFF;
+}
+
+.searchBarContainer {
+  width: 550px;
+}
+
+.searchBarContainer :global(.vtex-styleguide-9-x-input),
+.searchBarContainer :global(.vtex-styleguide-9-x-input)::placeholder,
+.searchBarContainer :global(.vtex-input__suffix)
+{
+  background: transparent;
+  font-family: "roboto", "sans-serif";
+  color: #FFF !important;
+  text-transform: uppercase;
+}
+
+.searchBarIcon {
+  color: #FFF;
+}
+
+
+.searchBarContainer :global(.vtex-store-components-3-x-searchIcon){
+  
+}
+
+
+
+
+.imageElement{
+  max-width: 912px;
+  max-height: 320px;
+  border-radius: 20px;
+}

@@ -1,0 +1,26 @@
+ 
+.listContainer{
+background-color:#212121;
+flex-wrap: nowrap;
+overflow-x: auto; 
+}
+
+.listItem :global(.vtex-button){
+background-color: transparent;
+display: flex;
+justify-content: space-between;
+align-items: center;
+color: #FFF;
+border: none;
+font-size: 0.8em;
+}
+
+.listItem :hover,
+.listItem :focus,
+.listItem :active{
+color: #59FF00;
+}
+
+.listContainer{
+  justify-content: start;
+}

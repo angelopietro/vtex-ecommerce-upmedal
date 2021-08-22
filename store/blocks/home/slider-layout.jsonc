@@ -1,0 +1,29 @@
+{
+  "slider-layout#home": {
+  "props": {
+    "itemsPerPage": {
+      "desktop": 1,
+      "tablet": 1,
+      "phone": 1
+    },
+    "infinite": true,
+    "showNavigationArrows": "desktopOnly",
+    "arrowSize": 14,
+    "blockClass": "carousel"
+  },
+  "children": ["image#1","image#2"]
+},
+ 
+  "image#1": {
+    "props": {
+      "src": "https://angelopietro--hiringcoders2021.myvtex.com/arquivos/banner-upMedal_01.png"
+    }
+  },
+
+  "image#2": {
+    "props": {
+      "src": "https://angelopietro--hiringcoders2021.myvtex.com/arquivos/banner-upMedal_02.png"
+      }
+  }
+  
+}

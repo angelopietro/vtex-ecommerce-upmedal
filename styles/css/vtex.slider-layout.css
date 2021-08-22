@@ -1,0 +1,23 @@
+.sliderLayoutContainer{
+  max-width: 912px;
+  margin: 15px auto;
+  background-color: transparent;
+}
+
+.sliderArrows,
+.paginationDotsContainer{
+  bottom: -50px;
+}
+
+.caretIcon,
+.caretIcon--carousel{
+  color: #FFF;
+}
+
+.paginationDot{
+  background-color:#6E6E6E;
+}
+
+.paginationDot--isActive{
+  background-color: #59FF00;
+}
