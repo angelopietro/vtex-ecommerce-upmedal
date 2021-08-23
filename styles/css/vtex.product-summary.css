@@ -1,0 +1,36 @@
+.container {
+  background-color: #414141;
+  width: 313px;
+}
+.productNameContainer {
+  padding: 0px 10px;
+}
+
+.brandName {
+  color: #eef3f7;
+}
+.image {
+  border-radius: 0;
+}
+.sellingPriceContainer {
+  color: #59FF00;
+}
+.buyButton {
+  margin: 0 10%;
+}
+.buyButton :global(.vtex-button) {
+  color: #000;
+  font-size: 0.8em;
+  background-color: #59FF00;
+  border: 0;
+}
+.description {
+  text-align: center;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-top: 5%;
+  padding: 5px;
+  color: #59FF00;
+  background-color: #000;
+}
+

@@ -2,25 +2,126 @@
   "footer": {
     "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
   },
-  "footer-layout.desktop": { 
+  "footer-layout.desktop": {
     "children": [
-      "flex-layout.row#footer"
-    ]
-  },
-  "footer-layout.mobile": { 
-    "children": [
-      "flex-layout.row#footer"
-    ]
-  },
-  "flex-layout.row#footer": { 
-    "children": [
-      "image"
-    ]
-  },
-  "image": {
+      "sticky-layout#main-footer"
+    ],
     "props": {
-      "width": 100,
-      "src": "https://brand.vtex.com/static/media/VTEX_pink_RGB.751a9fb5.svg"
+      "fullWidth": true
     }
-  }
+  },
+  "footer-layout.mobile": {
+    "children": [
+      "sticky-layout#main-footer"
+    ]
+  },
+  "sticky-layout#main-footer": {
+    "props": {
+      "blockClass": "sticky-header",
+      "position": "bottom",
+      "verticalSpacing": 0
+    },
+    "children": [
+      "flex-layout.row#footer-menu" 
+    ]
+  },
+
+  "flex-layout.row#footer-menu": {
+    "children": [
+      "vtex.menu@2.x:menu#footer"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    }
+  },
+ 
+  "vtex.menu@2.x:menu#footer": {
+    "children": [
+      "menu-item#person",
+      "menu-item#trofeu",
+      "menu-item#carrinho",
+      "menu-item#whats"
+    ]
+  },
+  "menu-item#person": {
+    "props": { 
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Client",
+        "text": "ENTRAR"
+      },
+      "iconProps": {
+        "id": "hpa-login",
+        "size": 24,
+        "viewBox": "0 0 24 24",
+        "activeClassName": "rebel-pink",
+        "mutedClassName": "c-action-primary"
+      } 
+    }
+  },
+  "menu-item#trofeu": {
+    "props": { 
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Client",
+        "text": "DESAFIOS"
+      },
+      "iconProps": {
+        "id": "hpa-challenges",        
+        "size": 24,
+        "viewBox": "0 0 24 24",
+        "activeClassName": "rebel-pink",
+        "mutedClassName": "c-action-primary"
+      } 
+    }
+
+  },
+  "menu-item#carrinho": {
+    "props": { 
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Client",
+        "text": "LOJA"
+      },
+      "iconProps": {
+        "id": "hpa-carts",
+        "size": 24,
+        "viewBox": "0 0 24 24",
+        "activeClassName": "rebel-pink",
+        "mutedClassName": "c-action-primary"
+      } 
+    }
+  },
+  
+  "menu-item#whats": {
+    "props": { 
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "https://api.whatsapp.com/send?phone=55XXXXXXXXXtext=XXXXXXX",
+        "noFollow": false,
+        "tagTitle": "Client",
+        "text": "SUPORTE"
+      },
+      "iconProps": { 
+        "size": 24,
+        "viewBox": "0 0 24 24",
+        "activeClassName": "rebel-pink",
+        "mutedClassName": "c-action-primary" 
+      } 
+    }
+  } 
 }

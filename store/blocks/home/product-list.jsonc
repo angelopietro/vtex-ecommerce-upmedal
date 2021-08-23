@@ -1,21 +1,36 @@
 {
+  "product-summary.shelf#home": {
+      "children": [
+          "product-summary-name",
+          "product-rating-inline",
+          "product-summary-image",   
+          "product-summary-description",
+          "product-summary-price", 
+          "product-summary-space",            
+          "product-summary-buy-button"
+      ]
+  },
+
   "list-context.product-list#home": {
-  "blocks": ["product-summary.shelf"],
-  "children": ["slider-layout#demo-products"],
-  "props": {
-    "orderBy": "OrderByTopSaleDESC"
-    }
+      "props": {
+          "category": "20"
+      },
+      "blocks": ["product-summary.shelf#home"],
+      "children": ["slider-layout#demo-products"]
   },
   "slider-layout#demo-products": {
-    "props": {
-      "itemsPerPage": {
-        "desktop": 5,
-        "tablet": 3,
-        "phone": 1
-      },
-      "infinite": true,
-      "fullWidth": false,
-      "blockClass": "shelf"
-    }
-  }
+      "props": {
+          "itemsPerPage": {
+              "desktop": 2,
+              "tablet": 2,
+              "phone": 1
+          },
+          "infinite": true,
+          "showNavigationArrows": "desktopOnly",
+          "blockClass": "lista-produtos-home"         
+      },          
+     
+      "children": []
+
+  }    
 }

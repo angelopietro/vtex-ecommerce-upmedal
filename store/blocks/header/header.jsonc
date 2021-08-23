@@ -30,7 +30,7 @@
       "flex-layout.col#logo-desktop",
       "flex-layout.col#spacer",
       "search-bar",
-      "login",
+      "flex-layout.col#favorite-heart-icon",
       "flex-layout.col#spacer",
       "minicart.v2",
       "flex-layout.col#spacer"
@@ -53,6 +53,21 @@
       "href": "/",
       "url": "https://angelopietro--hiringcoders2021.myvtex.com/arquivos/logo-up-medal.png",
       "width": "150"
+    }
+  },
+  "flex-layout.col#favorite-heart-icon": {
+    "props": {
+      "verticalAlign": "middle",
+      "marginRigth": "10"
+    },
+    "children": ["logo#favorite-heart-icon"]
+  },
+  "logo#favorite-heart-icon": {
+    "props": {
+      "title": "Favorite",
+      "href": "/",
+      "url": "https://angelopietro--hiringcoders2021.myvtex.com/arquivos/heart-outline.svg",
+      "width": "25"
     }
   },
   "header-layout.mobile": {

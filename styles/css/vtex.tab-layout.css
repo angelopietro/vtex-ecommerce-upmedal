@@ -1,6 +1,7 @@
  
 .listContainer{
 background-color:#212121;
+display: flex;
 flex-wrap: nowrap;
 overflow-x: auto; 
 }
@@ -16,9 +17,12 @@ font-size: 0.8em;
 }
 
 .listItem :hover,
-.listItem :focus,
-.listItem :active{
+.listItem :focus{
 color: #59FF00;
+}
+ 
+.listItemActive :global(.vtex-button) {
+  color: #59FF00;
 }
 
 .listContainer{

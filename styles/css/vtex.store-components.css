@@ -34,17 +34,10 @@
 .searchBarIcon {
   color: #FFF;
 }
-
-
-.searchBarContainer :global(.vtex-store-components-3-x-searchIcon){
-  
-}
-
-
-
-
+ 
 .imageElement{
   max-width: 912px;
   max-height: 320px;
   border-radius: 20px;
 }
+
